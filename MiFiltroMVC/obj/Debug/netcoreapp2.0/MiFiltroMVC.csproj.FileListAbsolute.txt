@@ -1,0 +1,10 @@
+/home/dobleub/Projects/Net/MiFiltroMVC/bin/Debug/netcoreapp2.0/MiFiltroMVC.deps.json
+/home/dobleub/Projects/Net/MiFiltroMVC/bin/Debug/netcoreapp2.0/MiFiltroMVC.runtimeconfig.json
+/home/dobleub/Projects/Net/MiFiltroMVC/bin/Debug/netcoreapp2.0/MiFiltroMVC.runtimeconfig.dev.json
+/home/dobleub/Projects/Net/MiFiltroMVC/bin/Debug/netcoreapp2.0/MiFiltroMVC.dll
+/home/dobleub/Projects/Net/MiFiltroMVC/bin/Debug/netcoreapp2.0/MiFiltroMVC.pdb
+/home/dobleub/Projects/Net/MiFiltroMVC/obj/Debug/netcoreapp2.0/MiFiltroMVC.csproj.CoreCompileInputs.cache
+/home/dobleub/Projects/Net/MiFiltroMVC/obj/Debug/netcoreapp2.0/MiFiltroMVC.AssemblyInfoInputs.cache
+/home/dobleub/Projects/Net/MiFiltroMVC/obj/Debug/netcoreapp2.0/MiFiltroMVC.AssemblyInfo.cs
+/home/dobleub/Projects/Net/MiFiltroMVC/obj/Debug/netcoreapp2.0/MiFiltroMVC.dll
+/home/dobleub/Projects/Net/MiFiltroMVC/obj/Debug/netcoreapp2.0/MiFiltroMVC.pdb

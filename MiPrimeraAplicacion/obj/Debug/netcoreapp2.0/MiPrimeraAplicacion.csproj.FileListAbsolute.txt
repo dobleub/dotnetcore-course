@@ -1,0 +1,10 @@
+/home/dobleub/Projects/Net/MiPrimeraAplicacion/bin/Debug/netcoreapp2.0/MiPrimeraAplicacion.deps.json
+/home/dobleub/Projects/Net/MiPrimeraAplicacion/bin/Debug/netcoreapp2.0/MiPrimeraAplicacion.runtimeconfig.json
+/home/dobleub/Projects/Net/MiPrimeraAplicacion/bin/Debug/netcoreapp2.0/MiPrimeraAplicacion.runtimeconfig.dev.json
+/home/dobleub/Projects/Net/MiPrimeraAplicacion/bin/Debug/netcoreapp2.0/MiPrimeraAplicacion.dll
+/home/dobleub/Projects/Net/MiPrimeraAplicacion/bin/Debug/netcoreapp2.0/MiPrimeraAplicacion.pdb
+/home/dobleub/Projects/Net/MiPrimeraAplicacion/obj/Debug/netcoreapp2.0/MiPrimeraAplicacion.csproj.CoreCompileInputs.cache
+/home/dobleub/Projects/Net/MiPrimeraAplicacion/obj/Debug/netcoreapp2.0/MiPrimeraAplicacion.AssemblyInfoInputs.cache
+/home/dobleub/Projects/Net/MiPrimeraAplicacion/obj/Debug/netcoreapp2.0/MiPrimeraAplicacion.AssemblyInfo.cs
+/home/dobleub/Projects/Net/MiPrimeraAplicacion/obj/Debug/netcoreapp2.0/MiPrimeraAplicacion.dll
+/home/dobleub/Projects/Net/MiPrimeraAplicacion/obj/Debug/netcoreapp2.0/MiPrimeraAplicacion.pdb

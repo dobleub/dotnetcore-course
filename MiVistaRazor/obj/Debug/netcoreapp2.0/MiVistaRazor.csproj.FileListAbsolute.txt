@@ -1,0 +1,10 @@
+/home/dobleub/Projects/Net/MiVistaRazor/bin/Debug/netcoreapp2.0/MiVistaRazor.deps.json
+/home/dobleub/Projects/Net/MiVistaRazor/bin/Debug/netcoreapp2.0/MiVistaRazor.runtimeconfig.json
+/home/dobleub/Projects/Net/MiVistaRazor/bin/Debug/netcoreapp2.0/MiVistaRazor.runtimeconfig.dev.json
+/home/dobleub/Projects/Net/MiVistaRazor/bin/Debug/netcoreapp2.0/MiVistaRazor.dll
+/home/dobleub/Projects/Net/MiVistaRazor/bin/Debug/netcoreapp2.0/MiVistaRazor.pdb
+/home/dobleub/Projects/Net/MiVistaRazor/obj/Debug/netcoreapp2.0/MiVistaRazor.csproj.CoreCompileInputs.cache
+/home/dobleub/Projects/Net/MiVistaRazor/obj/Debug/netcoreapp2.0/MiVistaRazor.AssemblyInfoInputs.cache
+/home/dobleub/Projects/Net/MiVistaRazor/obj/Debug/netcoreapp2.0/MiVistaRazor.AssemblyInfo.cs
+/home/dobleub/Projects/Net/MiVistaRazor/obj/Debug/netcoreapp2.0/MiVistaRazor.dll
+/home/dobleub/Projects/Net/MiVistaRazor/obj/Debug/netcoreapp2.0/MiVistaRazor.pdb

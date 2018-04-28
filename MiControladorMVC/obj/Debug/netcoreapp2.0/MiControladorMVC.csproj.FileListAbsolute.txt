@@ -1,0 +1,10 @@
+/home/dobleub/Projects/Net/MiControladorMVC/obj/Debug/netcoreapp2.0/MiControladorMVC.csproj.CoreCompileInputs.cache
+/home/dobleub/Projects/Net/MiControladorMVC/obj/Debug/netcoreapp2.0/MiControladorMVC.AssemblyInfoInputs.cache
+/home/dobleub/Projects/Net/MiControladorMVC/obj/Debug/netcoreapp2.0/MiControladorMVC.AssemblyInfo.cs
+/home/dobleub/Projects/Net/MiControladorMVC/bin/Debug/netcoreapp2.0/MiControladorMVC.deps.json
+/home/dobleub/Projects/Net/MiControladorMVC/bin/Debug/netcoreapp2.0/MiControladorMVC.runtimeconfig.json
+/home/dobleub/Projects/Net/MiControladorMVC/bin/Debug/netcoreapp2.0/MiControladorMVC.runtimeconfig.dev.json
+/home/dobleub/Projects/Net/MiControladorMVC/bin/Debug/netcoreapp2.0/MiControladorMVC.dll
+/home/dobleub/Projects/Net/MiControladorMVC/bin/Debug/netcoreapp2.0/MiControladorMVC.pdb
+/home/dobleub/Projects/Net/MiControladorMVC/obj/Debug/netcoreapp2.0/MiControladorMVC.dll
+/home/dobleub/Projects/Net/MiControladorMVC/obj/Debug/netcoreapp2.0/MiControladorMVC.pdb
