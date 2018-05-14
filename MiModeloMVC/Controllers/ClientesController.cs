@@ -4,16 +4,40 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MiModeloMVC.Models;
 
 namespace MiModeloMVC.Controllers
 {
     public class ClientesController : Controller
     {
+        // Clientes
+        public static List<Clientes> collectionClientes = new List<Clientes> {
+            new Clientes {
+                ID = 1,
+                nombre = "Angel",
+                fechaAlta = DateTime.Parse(DateTime.Today.ToString()),
+                edad = 30
+            },
+            new Clientes {
+                ID = 2,
+                nombre = "Juan",
+                fechaAlta = DateTime.Parse(DateTime.Today.ToString()),
+                edad = 25
+            },
+            new Clientes {
+                ID = 3,
+                nombre = "Mariela",
+                fechaAlta = DateTime.Parse(DateTime.Today.ToString()),
+                edad = 18
+            },
+        };
+
         // GET: Clientes
+        private EmpDBContext db = new EmpDBContext();
         public ActionResult Index()
         {
-            var Clientes = from e in ListClients()
+            var Clientes = from e in db.Clientes
                             orderby e.ID
                             select e;
             
@@ -23,7 +47,7 @@ namespace MiModeloMVC.Controllers
         // GET: Clientes/Details/5
         public ActionResult Details(int id)
         {
-            var Cliente = (from e in ListClients()
+            var Cliente = (from e in db.Clientes
                             where (int)e.ID == id
                             select e).First();
             return View(Cliente);
@@ -38,11 +62,12 @@ namespace MiModeloMVC.Controllers
         // POST: Clientes/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Clientes newClient)
         {
             try
-            {
-                // TODO: Add insert logic here
+            {   
+                db.Clientes.Add(newClient);
+                db.SaveChanges();
 
                 return RedirectToAction(nameof(Index));
             }
@@ -55,22 +80,27 @@ namespace MiModeloMVC.Controllers
         // GET: Clientes/Edit/5
         public ActionResult Edit(int id)
         {
-            var Cliente = (from e in ListClients()
+            /* var Cliente = (from e in collectionClientes
                             where (int)e.ID == id
-                            select e).First();
+                            select e).First(); */
+            var Cliente = db.Clientes.Single(m=>m.ID == id);
             return View(Cliente);
         }
 
         // POST: Clientes/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task<ActionResult> EditAsync(int id, IFormCollection collection)
         {
             try
             {
                 // TODO: Add update logic here
-
-                return RedirectToAction(nameof(Index));
+                var Cliente = db.Clientes.Single(m=>m.ID == id);                
+                if (await TryUpdateModelAsync<Clientes>(Cliente)) {
+                    db.SaveChanges();
+                    return RedirectToAction(nameof(Index));
+                }
+                return View(Cliente);
             }
             catch
             {
@@ -81,7 +111,7 @@ namespace MiModeloMVC.Controllers
         // GET: Clientes/Delete/5
         public ActionResult Delete(int id)
         {
-            var Cliente = (from e in ListClients()
+            var Cliente = (from e in db.Clientes
                             where (int)e.ID == id
                             select e).First();
             return View(Cliente);
@@ -107,26 +137,7 @@ namespace MiModeloMVC.Controllers
         // GET: Listados de Clientes
         [NonAction]
         public List<Clientes> ListClients() {
-            return new List<Clientes> {
-                new Clientes {
-                    ID = 1,
-                    nombre = "Angel",
-                    fechaAlta = DateTime.Parse(DateTime.Today.ToString()),
-                    edad = 30
-                },
-                new Clientes {
-                    ID = 2,
-                    nombre = "Juan",
-                    fechaAlta = DateTime.Parse(DateTime.Today.ToString()),
-                    edad = 25
-                },
-                new Clientes {
-                    ID = 3,
-                    nombre = "Mariela",
-                    fechaAlta = DateTime.Parse(DateTime.Today.ToString()),
-                    edad = 18
-                },
-            };
+            return collectionClientes;
         }
 
     }

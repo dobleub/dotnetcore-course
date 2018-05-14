@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging.Debug;
+using MiModeloMVC.Models;
 
 namespace MiModeloMVC
 {
@@ -23,10 +24,13 @@ namespace MiModeloMVC
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
-
             services.AddDbContext<WebAPIDataContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("WebAPIDataContext")));
+            
+            /* services.AddDbContext<EmpDBContext>(options => 
+                    options.UseSqlite("Data Source=clientes.db")); */
+
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
