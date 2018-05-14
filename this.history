@@ -1,0 +1,112 @@
+ 2424  dotnet new mvc
+ 2426  dotnet new mvc
+ 2450  dotnet new mvc
+ 2451  dotnet --info
+ 2452  strace -f -o logfile dotnet new mvc
+ 2454  dotnet new -t console
+ 2457  dotnet new mvc
+ 2467  dotnet new mvc -au None -o MiPrimeraAplicacion
+ 2473  dotnet run
+ 2476  dotnet new mvc MiControladorMVC
+ 2477  dotnet new mvc -o MiControladorMVC
+ 2480  dotnet restore
+ 2481  dotnet run
+ 2483  dotnet run
+ 2485  dotnet run
+ 2489  dotnet run
+ 2507  dotnet run
+ 2509  dotnet new mvc -o MiFiltroMVC
+ 2512  dotnet run
+ 2514  dotnet run
+ 2518  dotnet run
+ 2521  dotnet new mvc -o MiVistaMVC
+ 2524  dotnet run
+ 2528  dotnet new mvc -o MiVistaRazor
+ 2529  dotnet run
+ 2531  dotnet run
+ 2532  dotnet add --help
+ 2533  dotnet reference --help
+ 2534  dotnet add reference --help
+ 2535  dotnet add package EntityFramework
+ 2537  dotnet add package EntityFramework
+ 2538  dotnet run
+ 2543  git push origin git@github.com:dobleub/dotnetcore-course.git
+ 2544  git push git@github.com:dobleub/dotnetcore-course.git
+ 2545  git push --set-upstream git@github.com:dobleub/dotnetcore-course.git master
+ 2547  git push --set-upstream git@github.com:dobleub/dotnetcore-course.git master
+ 2550  git remote add origin git@github.com:dobleub/dotnetcore-course.git
+ 2560  git pull git@github.com:dobleub/dotnetcore-course.git master
+ 2586  dotnet new mvc -o MiModeloMVC
+ 2591  dotnet new --help
+ 2594  dotnet new razor -o MiAplicacionRazor
+ 2596  dotnet add package CodeGeneration
+ 2597  dotnet aspnet-codegenerator --project . controller -name ClientesController -m Author -dc WebAPIDataContext
+ 2598  dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+ 2599  dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Tools
+ 2600  dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Mvc
+ 2601  dotnet add package Microsoft.AspNetCore.Server.IISIntegration.Tools
+ 2603  dotnet add package EntityFramework
+ 2605  dotnet aspnet-codegenerator --project . controller -name ClientesController -m Author -dc WebAPIDataContext
+ 2608  dotnet aspnet-codegenerator --project . controller -name ClientesController -m Author -dc WebAPIDataContext
+ 2609  dotnet restore
+ 2610  dotnet aspnet-codegenerator --project . controller -name ClientesController -m Author -dc WebAPIDataContext
+ 2612  dotnet add package Newtonsoft.Json
+ 2613  dotnet --help
+ 2614  dotnet list
+ 2615  dotnet list MiModeloMVC.csproj 
+ 2616  dotnet list MiModeloMVC.csproj reference
+ 2617  dotnet list reference
+ 2619  dotnet --help
+ 2620  dotnet --additional-deps
+ 2621  dotnet --additional-deps .
+ 2622  dotnet nuget --help
+ 2623  dotnet list --help
+ 2624  dotnet list . reference
+ 2625  dotnet list MiModeloMVC.csproj reference
+ 2627  dotnet restore
+ 2628  dotnet add reference <ItemGroup>
+ 2630  dotnet add reference Microsoft.VisualStudio.Web.CodeGeneration.Design
+ 2631  dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+ 2633  dotnet add reference Microsoft.VisualStudio.Web.CodeGeneration.Design
+ 2634  dotnet aspnet-codegenerator --project . controller -name ClientesController -m Author -dc WebAPIDataContext
+ 2639  dotnet new mvc -o MiModeloMVC
+ 2642  dotnet aspnet-codegenerator --project . -name Clientes
+ 2643  dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 2.0.3
+ 2644  dotnet aspnet-codegenerator --project . -name ClientesController -m Author -dc WebAPIDataContext
+ 2646  dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 2.0.3
+ 2647  dotnet restore
+ 2648  dotnet aspnet-codegenerator --project . -name ClientesController -m Author -dc WebAPIDataContext
+ 2650  dotnet aspnet-codegenerator --project . controller -name ClientesController -m Author -dc WebAPIDataContext
+ 2651  dotnet aspnet-codegenerator --project . controller --name ClientesController -m Author -dc WebAPIDataContext
+ 2652  dotnet aspnet-codegenerator --project . controller -name HelloController -m Author -dc WebAPIDataContext
+ 2653  dotnet aspnet-codegenerator --project . controller -name ClientesController -dc WebAPIDataContext
+ 2654  dotnet aspnet-codegenerator --help
+ > 2655  dotnet aspnet-codegenerator --project . controller -name ClientesController -dc WebAPIDataContext -outDir Controllers -actions
+ 2657  dotnet aspnet-codegenerator --project . view -?
+ 2659  dotnet run
+ 2661  dotnet aspnet-codegenerator --project . view Index 
+ 2663  dotnet aspnet-codegenerator --project . view Index -outDir Views/Clientes/
+ 2664  dotnet aspnet-codegenerator --project . view -name Index -dc WebAPIDataContext -outDir Views/Clientes/
+ 2665  dotnet aspnet-codegenerator --project . view -?
+ 2666  dotnet aspnet-codegenerator --project . view -m Clientes -dc WebAPIDataContext -outDir Views/Clientes/
+ 2667  dotnet aspnet-codegenerator --project . view ViewName Index TemplateName List -m Clientes -dc WebAPIDataContext -outDir Views/Clientes/
+ 2668  dotnet aspnet-codegenerator --project . view ViewName Index -m Clientes -dc WebAPIDataContext -outDir Views/Clientes/
+ 2669  dotnet aspnet-codegenerator --project . view ViewName "Index.cshtml" -m Clientes -dc WebAPIDataContext -outDir Views/Clientes/ -udl
+ 2670  dotnet aspnet-codegenerator --project . view -m Clientes -dc WebAPIDataContext -outDir Views/Clientes/ -udl
+ 2671  dotnet aspnet-codegenerator --project . view "Index.cshtml" -m Clientes -dc WebAPIDataContext -outDir Views/Clientes/ -udl
+ 2672  dotnet aspnet-codegenerator --project . view "Index.cshtml" "List" -m Clientes -dc WebAPIDataContext -outDir Views/Clientes/ -udl
+> 2673  dotnet aspnet-codegenerator --project . view "Index" "List" -m Clientes -dc WebAPIDataContext -outDir Views/Clientes/ -udl
+ 2675  dotnet run
+ 2677  dotnet aspnet-codegenerator --project . view -?
+ 2678  dotnet aspnet-codegenerator --project . view "Edit" "Edit" -m Clientes -dc WebAPIDataContext -outDir Views/Clientes/ -udl
+ 2679  dotnet aspnet-codegenerator --project . view "Details" "Details" -m Clientes -dc WebAPIDataContext -outDir Views/Clientes/ -udl
+ 2680  dotnet aspnet-codegenerator --project . view "Delete" "Delete" -m Clientes -dc WebAPIDataContext -outDir Views/Clientes/ -udl
+ 2681  dotnet aspnet-codegenerator --project . view "Create" "Create" -m Clientes -dc WebAPIDataContext -outDir Views/Clientes/ -udl
+ 2682  dotnet run
+ 2684  dotnet run
+ 2686  dotnet add package Microsoft.Extensions.Logging.Debug --version 2.1.0-preview2-final
+ 2687  dotnet resotre
+ 2688  dotnet restore
+ 2689  dotnet run
+ 2691  dotnet run
+ 2887  dotnet run
