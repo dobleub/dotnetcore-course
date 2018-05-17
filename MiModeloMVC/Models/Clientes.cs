@@ -1,5 +1,6 @@
 using System;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace MiModeloMVC.Models
 {
@@ -8,8 +9,16 @@ namespace MiModeloMVC.Models
         // {get; } Consultar su valor
         // {set; } Establecer su valor
         public int ID {get; set;}
+        
+        [StringLength (60, MinimumLength=3)]
         public string nombre {get; set;}
+
+        [Display (Name="Fecha de Alta")]
+        [DataType (DataType.Date)]
+        [DisplayFormat (DataFormatString="{0:YYYY-MM-dd}", ApplyFormatInEditMode=true)]
         public DateTime fechaAlta {get; set;}
+
+        [Range (18, 75)]
         public int edad {get; set;}
     }
 
