@@ -12537,23 +12537,23 @@
     ]
   },
   "packageFolders": {
-    "/home/dobleub/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\eosorio\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/dobleub/Projects/Net/MiVistaRazor/MiVistaRazor.csproj",
+      "projectUniqueName": "c:\\Users\\eosorio\\Courses\\dotnetcore-course\\MiVistaRazor\\MiVistaRazor.csproj",
       "projectName": "MiVistaRazor",
-      "projectPath": "/home/dobleub/Projects/Net/MiVistaRazor/MiVistaRazor.csproj",
-      "packagesPath": "/home/dobleub/.nuget/packages/",
-      "outputPath": "/home/dobleub/Projects/Net/MiVistaRazor/obj/",
+      "projectPath": "c:\\Users\\eosorio\\Courses\\dotnetcore-course\\MiVistaRazor\\MiVistaRazor.csproj",
+      "packagesPath": "C:\\Users\\eosorio\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\eosorio\\Courses\\dotnetcore-course\\MiVistaRazor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/dobleub/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\eosorio\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
