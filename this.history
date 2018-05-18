@@ -110,3 +110,15 @@
  2689  dotnet run
  2691  dotnet run
  2887  dotnet run
+  179  git clone git@github.com:dobleub/dotnetcore-course.git
+  181  cd ../Courses/dotnetcore-course/MiModeloMVC/
+  184  dotnet run
+  185  dotnet ef migrations add Dataannotations
+  186  dotnet ef migrations add Dataannotations --context
+  187  dotnet ef migrations add Dataannotations --help
+  188  dotnet ef migrations add Dataannotations --context EmpDBContext
+  189  dotnet ef database drop
+  190  dotnet ef database drop --context EmpDBContext
+  191  dotnet ef database update --context EmpDBContext
+  193  history | grep dotnet
+  194  history | grep dotnet >> ../this.history 
