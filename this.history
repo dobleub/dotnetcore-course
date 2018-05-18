@@ -122,3 +122,4 @@
   191  dotnet ef database update --context EmpDBContext
   193  history | grep dotnet
   194  history | grep dotnet >> ../this.history 
+  195  dotnet new mvc -o MiSeguridadMVC -au Individual
