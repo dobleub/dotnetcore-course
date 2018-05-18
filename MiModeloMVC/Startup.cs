@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging.Debug;
+using Microsoft.AspNetCore.Mvc;
 using MiModeloMVC.Models;
 
 namespace MiModeloMVC
@@ -30,7 +31,12 @@ namespace MiModeloMVC
             /* services.AddDbContext<EmpDBContext>(options => 
                     options.UseSqlite("Data Source=clientes.db")); */
 
-            services.AddMvc();
+            services.AddResponseCaching();
+            services.AddMvc(options => {
+                options.CacheProfiles.Add("Default", new CacheProfile() {
+                    Duration = 300
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,6 +51,7 @@ namespace MiModeloMVC
                 app.UseExceptionHandler("/Home/Error");
             }
 
+            app.UseResponseCaching();
             app.UseStaticFiles();
 
             app.UseMvc(routes =>
