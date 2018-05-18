@@ -15,7 +15,7 @@ namespace MiModeloMVC.Models
 
         [Display (Name="Fecha de Alta")]
         [DataType (DataType.Date)]
-        [DisplayFormat (DataFormatString="{0:YYYY-MM-dd}", ApplyFormatInEditMode=true)]
+        [DisplayFormat (DataFormatString="{0:yyyy-MM-dd}", ApplyFormatInEditMode=true)]
         public DateTime fechaAlta {get; set;}
 
         [Range (18, 75)]
