@@ -36,6 +36,14 @@ namespace MiSeguridadMVC
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
 
+            // This policy is just for one user authorization
+            services.AddAuthorization(options => { 
+                options.AddPolicy("TestUser",
+                    authBuilder => {
+                        authBuilder.RequireUserName("test@email.com");
+                    });
+            });
+
             services.AddMvc();
         }
 
