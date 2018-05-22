@@ -1,0 +1,50 @@
+﻿@model MiCodeFirst_DataAnnotations.Models.Matricula
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Matricula</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Alumno.Apellidos)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Alumno.Apellidos)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.CursoID)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.CursoID)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Precio)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Precio)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.MatriculaID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
