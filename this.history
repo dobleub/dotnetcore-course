@@ -123,3 +123,5 @@
   193  history | grep dotnet
   194  history | grep dotnet >> ../this.history 
   195  dotnet new mvc -o MiSeguridadMVC -au Individual
+  196  dotnet new webapi -o MiWebAPIMVC -au None
+  195  dotnet aspnet-codegenerator --project . controller -name ProductoController -dc WebAPIDataContext -outDir Controllers -actions -m Producto
