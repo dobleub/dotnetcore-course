@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace MiWebAPIMVC.Migrations
 {
-    public partial class Producto : Migration
+    public partial class ProductoMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

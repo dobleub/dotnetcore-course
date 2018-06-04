@@ -4,14 +4,14 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage;
-using MiWebAPIMVC.Models;
+using MiWebAPIMVC.Data;
 using System;
 
 namespace MiWebAPIMVC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20180522230150_Producto")]
-    partial class Producto
+    [Migration("20180604214231_ProductoMigration")]
+    partial class ProductoMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
