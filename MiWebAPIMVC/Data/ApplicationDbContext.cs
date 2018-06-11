@@ -23,5 +23,6 @@ namespace MiWebAPIMVC.Data
 
         public DbSet<MiWebAPIMVC.Models.Producto> Producto { get; set; }
         public DbSet<MiWebAPIMVC.Models.Cliente> Cliente { get; set; }
+        public DbSet<MiWebAPIMVC.Models.Venta> Venta { get; set; }
     }
 }
